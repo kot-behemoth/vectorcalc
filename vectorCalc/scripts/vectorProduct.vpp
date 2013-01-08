@@ -1,0 +1,16 @@
+/*
+	This is the example script file to a solution to a very common
+	mathematical problem encountered in the 2nd year
+	mathematics of the Computer Games Technology course.
+	(c) Grigory Goltsov 2012
+*/
+
+/*
+	The problem is to simply find a vector that is perpendicular
+	to the two given ones.
+*/
+vector vector1 = { 1, 0, 0 };
+vector vector2 = { 0, 1, 0 };
+
+vector result = vector1 >< vector2;
+print result;

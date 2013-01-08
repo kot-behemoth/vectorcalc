@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23FA21E714B78F2F0059463A /* Interpreter.c in Sources */ = {isa = PBXBuildFile; fileRef = 23FA21DD14B78F2F0059463A /* Interpreter.c */; };
+		23FA21E814B78F2F0059463A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 23FA21DF14B78F2F0059463A /* main.c */; };
+		23FA21E914B78F2F0059463A /* ParseTreeBuilder.c in Sources */ = {isa = PBXBuildFile; fileRef = 23FA21E114B78F2F0059463A /* ParseTreeBuilder.c */; };
+		23FA21EA14B78F2F0059463A /* SymbolTable.c in Sources */ = {isa = PBXBuildFile; fileRef = 23FA21E314B78F2F0059463A /* SymbolTable.c */; };
+		23FA21EB14B78F2F0059463A /* vectorCalc.l in Sources */ = {isa = PBXBuildFile; fileRef = 23FA21E514B78F2F0059463A /* vectorCalc.l */; };
+		23FA21EC14B78F2F0059463A /* vectorCalc.y in Sources */ = {isa = PBXBuildFile; fileRef = 23FA21E614B78F2F0059463A /* vectorCalc.y */; };
+		23FA21FE14B9A2F60059463A /* Math.c in Sources */ = {isa = PBXBuildFile; fileRef = 23FA21FC14B9A2F50059463A /* Math.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		23FA21ED14B78F780059463A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = sourcecode.yacc;
+			isEditable = 1;
+			outputFiles = (
+				"",
+			);
+			script = "/usr/bin/bison -y --defines=vectorCalc.tab.h --output-file=vectorCalc.tab.c";
+		};
+		23FA21EE14B78FA50059463A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.lex;
+			fileType = sourcecode.lex;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		23FA21CE14B78EC00059463A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		232DFFA014BB5B2F00FCF4D1 /* controlStatements.vpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = controlStatements.vpp; sourceTree = "<group>"; };
+		232DFFA114BB5B2F00FCF4D1 /* operatorOverloading.vpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = operatorOverloading.vpp; sourceTree = "<group>"; };
+		232DFFA214BB5B2F00FCF4D1 /* typeError.vpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = typeError.vpp; sourceTree = "<group>"; };
+		232DFFA314BB5B2F00FCF4D1 /* vectorProduct.vpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vectorProduct.vpp; sourceTree = "<group>"; };
+		23FA21D014B78EC00059463A /* vectorCalc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = vectorCalc; sourceTree = BUILT_PRODUCTS_DIR; };
+		23FA21DC14B78F2F0059463A /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		23FA21DD14B78F2F0059463A /* Interpreter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Interpreter.c; sourceTree = "<group>"; };
+		23FA21DE14B78F2F0059463A /* Interpreter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interpreter.h; sourceTree = "<group>"; };
+		23FA21DF14B78F2F0059463A /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		23FA21E014B78F2F0059463A /* ParseTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseTree.h; sourceTree = "<group>"; };
+		23FA21E114B78F2F0059463A /* ParseTreeBuilder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ParseTreeBuilder.c; sourceTree = "<group>"; };
+		23FA21E214B78F2F0059463A /* ParseTreeBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseTreeBuilder.h; sourceTree = "<group>"; };
+		23FA21E314B78F2F0059463A /* SymbolTable.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SymbolTable.c; sourceTree = "<group>"; };
+		23FA21E414B78F2F0059463A /* SymbolTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymbolTable.h; sourceTree = "<group>"; };
+		23FA21E514B78F2F0059463A /* vectorCalc.l */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = vectorCalc.l; sourceTree = "<group>"; };
+		23FA21E614B78F2F0059463A /* vectorCalc.y */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.yacc; path = vectorCalc.y; sourceTree = "<group>"; };
+		23FA21FC14B9A2F50059463A /* Math.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Math.c; sourceTree = "<group>"; };
+		23FA21FD14B9A2F50059463A /* Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Math.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23FA21CD14B78EC00059463A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2388F4B214B9E39D0025E460 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				232DFFA014BB5B2F00FCF4D1 /* controlStatements.vpp */,
+				232DFFA114BB5B2F00FCF4D1 /* operatorOverloading.vpp */,
+				232DFFA214BB5B2F00FCF4D1 /* typeError.vpp */,
+				232DFFA314BB5B2F00FCF4D1 /* vectorProduct.vpp */,
+			);
+			name = scripts;
+			path = vectorCalc/scripts;
+			sourceTree = "<group>";
+		};
+		23FA21C514B78EBF0059463A = {
+			isa = PBXGroup;
+			children = (
+				2388F4B214B9E39D0025E460 /* scripts */,
+				23FA21D314B78EC00059463A /* vectorCalc */,
+				23FA21D114B78EC00059463A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23FA21D114B78EC00059463A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23FA21D014B78EC00059463A /* vectorCalc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23FA21D314B78EC00059463A /* vectorCalc */ = {
+			isa = PBXGroup;
+			children = (
+				23FA21F914B7A1C30059463A /* headers */,
+				23FA21FA14B7A1D10059463A /* implementation */,
+				23FA21E514B78F2F0059463A /* vectorCalc.l */,
+				23FA21E614B78F2F0059463A /* vectorCalc.y */,
+			);
+			path = vectorCalc;
+			sourceTree = "<group>";
+		};
+		23FA21F914B7A1C30059463A /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				23FA21FD14B9A2F50059463A /* Math.h */,
+				23FA21DC14B78F2F0059463A /* Defines.h */,
+				23FA21DE14B78F2F0059463A /* Interpreter.h */,
+				23FA21E014B78F2F0059463A /* ParseTree.h */,
+				23FA21E214B78F2F0059463A /* ParseTreeBuilder.h */,
+				23FA21E414B78F2F0059463A /* SymbolTable.h */,
+			);
+			name = headers;
+			sourceTree = "<group>";
+		};
+		23FA21FA14B7A1D10059463A /* implementation */ = {
+			isa = PBXGroup;
+			children = (
+				23FA21DD14B78F2F0059463A /* Interpreter.c */,
+				23FA21DF14B78F2F0059463A /* main.c */,
+				23FA21E114B78F2F0059463A /* ParseTreeBuilder.c */,
+				23FA21FC14B9A2F50059463A /* Math.c */,
+				23FA21E314B78F2F0059463A /* SymbolTable.c */,
+			);
+			name = implementation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23FA21CF14B78EC00059463A /* vectorCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23FA21D914B78EC00059463A /* Build configuration list for PBXNativeTarget "vectorCalc" */;
+			buildPhases = (
+				23FA21CC14B78EC00059463A /* Sources */,
+				23FA21CD14B78EC00059463A /* Frameworks */,
+				23FA21CE14B78EC00059463A /* CopyFiles */,
+			);
+			buildRules = (
+				23FA21EE14B78FA50059463A /* PBXBuildRule */,
+				23FA21ED14B78F780059463A /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = vectorCalc;
+			productName = vectorCalc;
+			productReference = 23FA21D014B78EC00059463A /* vectorCalc */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23FA21C714B78EBF0059463A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "University of Edinburgh";
+			};
+			buildConfigurationList = 23FA21CA14B78EBF0059463A /* Build configuration list for PBXProject "vectorCalc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 23FA21C514B78EBF0059463A;
+			productRefGroup = 23FA21D114B78EC00059463A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23FA21CF14B78EC00059463A /* vectorCalc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23FA21CC14B78EC00059463A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23FA21E714B78F2F0059463A /* Interpreter.c in Sources */,
+				23FA21E814B78F2F0059463A /* main.c in Sources */,
+				23FA21E914B78F2F0059463A /* ParseTreeBuilder.c in Sources */,
+				23FA21EA14B78F2F0059463A /* SymbolTable.c in Sources */,
+				23FA21EB14B78F2F0059463A /* vectorCalc.l in Sources */,
+				23FA21EC14B78F2F0059463A /* vectorCalc.y in Sources */,
+				23FA21FE14B9A2F60059463A /* Math.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		23FA21D714B78EC00059463A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		23FA21D814B78EC00059463A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		23FA21DA14B78EC00059463A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.c.c;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				YACC_GENERATE_DEBUGGING_DIRECTIVES = YES;
+			};
+			name = Debug;
+		};
+		23FA21DB14B78EC00059463A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.c.c;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				YACC_GENERATE_DEBUGGING_DIRECTIVES = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23FA21CA14B78EBF0059463A /* Build configuration list for PBXProject "vectorCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23FA21D714B78EC00059463A /* Debug */,
+				23FA21D814B78EC00059463A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23FA21D914B78EC00059463A /* Build configuration list for PBXNativeTarget "vectorCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23FA21DA14B78EC00059463A /* Debug */,
+				23FA21DB14B78EC00059463A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23FA21C714B78EBF0059463A /* Project object */;
+}

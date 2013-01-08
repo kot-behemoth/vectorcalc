@@ -1,0 +1,10 @@
+/*
+	This is the example script file to demostrate type error detection
+	within the developed Vector++ scripting language.
+	(c) Grigory Goltsov 2012
+*/
+
+number num = 10;
+vector vec = { 1, 1, 1 };
+
+number errorHere = vec;

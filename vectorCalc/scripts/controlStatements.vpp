@@ -1,0 +1,25 @@
+/*
+	This is the example script file to demostrate the control statements
+	within the developed Vector++ scripting language.
+	(c) Grigory Goltsov 2012
+*/
+
+number iterator = 0;
+vector vec = { 1, 1, 1 };
+
+while(iterator < 10)
+{
+	// print the vector
+	print vec;
+	// increse the vector
+	vec = vec + { 1, 1, 1 };
+	
+	// if the iterator is 5, then print it
+	if(iterator == 5)
+	{
+		print iterator;
+	}
+	
+	// increment the iterator
+	iterator = iterator + 1;
+}

@@ -1,0 +1,15 @@
+/*
+	This is the example script file to demostrate the operator overloading
+	within the developed Vector++ scripting language.
+	(c) Grigory Goltsov 2012
+*/
+
+number num = 10;
+vector vec = { 1, 1, 1 };
+
+/*
+	Here the multiplication is performed as vector * number
+	and the return type is a vector.
+*/
+vector result1 = vec * num;
+print result1;
